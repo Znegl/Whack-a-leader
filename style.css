@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+	font-family: "Hello I Like You";
+	text-align: center;
+	font-size: 4em;
+	color: #fff;
+	background: black;
+	overflow: hidden;
+}
+#game {
+	position: relative;
+	width: 1280px;
+	height: 720px;
+	margin: auto;
+	overflow: hidden;
+}
+.block, .image {
+	display: block;
+	width: 320px;
+	height: 720px;
+	float: left;
+}
+.score {
+	position: absolute;
+	top: .25em;
+	width: 1em;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 3em;
+	padding: .3em;
+}
+#score1 {
+	z-index: 1;
+	left: .25em;
+}
+#score2 {
+	z-index: 1;
+	right: .25em;
+}
+#clock {
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	margin-left: -.5em;
+	width: 1em;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 3em;
+	padding: .3em;
+	top: .25em;
+}
+h1 {
+	margin-top: 2em;
+	text-shadow: 0 .050em 0.13em rgba(0, 0, 0, 1);
+}
+h1.overlay {
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 0;
+}
+.block.indent {
+	margin-left: 320px;
+}
+.block.text {
+	line-height: 720px;
+}
+
+section {
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	opacity: 0;
+	transition: opacity 1s;
+}
+section.active {
+	opacity: 1;
+}
+
+
+#imageWrapper {
+	opacity: 0;
+	transition: opacity 1s;
+}
+#imageWrapper.active {
+	opacity: 1;
+}
