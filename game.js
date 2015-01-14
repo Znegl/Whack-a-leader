@@ -223,7 +223,7 @@ function validateKeyPress(e) {
 			});
 
 			// Count down if not
-			if (!correct) {
+			if (!correct && players.length == 1) {
 				players.forEach(function(player) {
 					player.score--;
 				});
